@@ -1,3 +1,9 @@
+accounts = {
+    "40817": {"balance": 1500.0, "currency": "USD"},
+    "40702": {"balance": 320.5, "currency": "EUR"},
+    "42301": {"balance": 0, "currency": "GEL"}
+}
+
 # task 1
 print(type(1500))
 print(type("1500"))
@@ -38,3 +44,7 @@ print(100/usd_rates["EUR"])
 usd_rates["GEL"] = 2.5936
 del usd_rates["RUB"]
 print(usd_rates)
+
+# task 8
+for account, details in accounts.items():
+    print(account, details["balance"])
