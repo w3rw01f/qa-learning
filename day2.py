@@ -32,7 +32,7 @@ usd_rates = {
     "RUB": 82.5486
 }
 
-print(usd_rates["EUR"]*100)
+print(100/usd_rates["EUR"])
 
 # task 7
 usd_rates["GEL"] = 2.5936
