@@ -20,10 +20,21 @@ for transaction in transactions:
 print(neg_transactions)
 
 # task 5
-a = 0
+big_count = 0
 for transaction in transactions:
     if transaction > 1000:
-        a += 1
-print(a)
+        big_count += 1
+print(big_count)
 
 # task 6
+usd_rates = {
+    "EUR": 0.893416,
+    "RUB": 82.5486
+}
+
+print(usd_rates["EUR"]*100)
+
+# task 7
+usd_rates["GEL"] = 2.5936
+del usd_rates["RUB"]
+print(usd_rates)
