@@ -38,7 +38,7 @@ usd_rates = {
     "RUB": 82.5486
 }
 
-print(100/usd_rates["EUR"])
+print(round(100/usd_rates["EUR"], 2))
 
 # task 7
 usd_rates["GEL"] = 2.5936
@@ -48,3 +48,20 @@ print(usd_rates)
 # task 8
 for account, details in accounts.items():
     print(account, details["balance"])
+
+# task 9
+currencies = set()
+
+for details in accounts.values():
+    currencies.add(details["currency"])
+
+print(currencies)
+
+# task 10
+def is_valid_true(value):
+    if len(str(value)) == 5:
+        return True
+    else:
+        return False
+
+print(is_valid_true(12345))
