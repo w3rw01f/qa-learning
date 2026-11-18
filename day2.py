@@ -59,9 +59,7 @@ print(currencies)
 
 # task 10
 def is_valid_true(value):
-    if len(str(value)) == 5:
-        return True
-    else:
-        return False
+    return len(str(value)) == 5 and str(value).isdigit()
 
-print(is_valid_true(12345))
+print(is_valid_true("1234a"))  # False
+print(is_valid_true(1234))     # False
