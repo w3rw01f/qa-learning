@@ -63,3 +63,9 @@ def is_valid_true(value):
 
 print(is_valid_true("1234a"))  # False
 print(is_valid_true(1234))     # False
+
+# task 11
+def apply_fee(amount, percent):
+    return round(amount - amount * percent/100, 2)
+
+print (apply_fee(100, 5))
